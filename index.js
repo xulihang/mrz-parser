@@ -1,4 +1,4 @@
-function parse(a, b){
+export function parse(a, b){
     a=fillFillers(a);
     b=fillFillers(b);
     let doc_type = a.slice(0,2);
@@ -7,21 +7,21 @@ function parse(a, b){
     if (surname_names.length < 2){
         surname_names.push('');
     }
-    surname = surname_names[0];
-    names = surname_names[1];
+    let surname = surname_names[0];
+    let names = surname_names[1];
     names = names.replaceAll('<', ' ').trim();
     surname = surname.replaceAll('<', ' ').trim();
-    number = b.slice(0,9);
-    check_number = b.charAt(9);
-    nationality = b.slice(10,13);
-    date_of_birth = b.slice(13,19);
-    check_date_of_birth = b.charAt(19);
-    sex = b.charAt(20);
-    expiration_date = b.slice(21,27);
-    check_expiration_date = b.charAt(27);
-    personal_number = b.slice(28,42);
-    check_personal_number = b.charAt(42);
-    check_composite = b.charAt(43);
+    let number = b.slice(0,9);
+    let check_number = b.charAt(9);
+    let nationality = b.slice(10,13);
+    let date_of_birth = b.slice(13,19);
+    let check_date_of_birth = b.charAt(19);
+    let sex = b.charAt(20);
+    let expiration_date = b.slice(21,27);
+    let check_expiration_date = b.charAt(27);
+    let personal_number = b.slice(28,42);
+    let check_personal_number = b.charAt(42);
+    let check_composite = b.charAt(43);
 
     let result = {};
     result["surname"] = surname;
