@@ -6,7 +6,7 @@ Type 3 MRZ code parser.
 
 
 ```js
-const parser = require("mrz-parser");
+const parser = require("mrz-parser-js");
 parsed = parser.parse("P<GBRFOMKIN<<ALEKSEY<<<<<<<<<<<<<<<<<<<<<<<<","5032403533GBR7006236M2305296<<<<<<<<<<<<<<06")
 console.log(parsed["surname"]);
 ```
