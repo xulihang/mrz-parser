@@ -1,5 +1,5 @@
 {
-  "name": "mrz-parser",
+  "name": "mrz-parser-js",
   "version": "1.0.0",
   "description": "MRZ parser",
   "main": "index.js",
